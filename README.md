@@ -6,3 +6,5 @@ This repository contains:
   - tidy_data.csv: the output data.
   - tidy_data.xlsx: the output data in xlsx format with two sheets: Time and FFT.
   - UCI HAR Dataset: Original datasets.
+  - Code book.Rmd: R markdown file to create code book.
+  - Code-book.html: Code Book.
