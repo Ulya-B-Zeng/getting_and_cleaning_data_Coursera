@@ -8,3 +8,4 @@ This repository contains:
   - UCI HAR Dataset: Original datasets.
   - Code book.Rmd: R markdown file to create code book.
   - Code-book.html: Code Book.
+  - tidy-data-mean.txt: the file of step 5 (only mean values).
