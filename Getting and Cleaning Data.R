@@ -68,5 +68,8 @@ library(openxlsx)
 xlsxsheet <- list("Time"=data_time,"Fast Fourier Transform"=data_FFT)
 write.xlsx(xlsxsheet,file="tidy_data.xlsx")
 
+##7. Mean output (Step 5)
+data2_mean <- data2[,grep(".mean.",names(data2))]
+write.table(file = "tidy-data-mean.txt",x = data2_mean,row.names = FALSE)
 
 

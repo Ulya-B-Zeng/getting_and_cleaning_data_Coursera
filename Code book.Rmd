@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Codebook"
 output: html_document
@@ -97,4 +98,105 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 [23] "FFT.Body.BodyAngular-velocity.Magnitude.mean."                
 [24] "FFT.Body.BodyAngular-velocity.Magnitude.std-dev."             
 [25] "FFT.Body.BodyAngular-velocity.Jerk-signals.Magnitude.mean."   
+=======
+---
+title: "Codebook"
+output: html_document
+date: '2022-06-17'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### introduction
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+### Codebook for the output data
+
+#### Strings
+  - time: time domain signals
+  - FFT: Fast Fourier Transform of the original signals
+  - Body: body signals
+  - Gravity: Gravity signals
+  - Accelerometer: linear acceleration signals
+  - Angular-velocity: angular velocity signals
+  - Jerk-signals: Jerk signals
+  - Magnitude: the magnitude of these three-dimensional signals calculated using the Euclidean norm
+  - mean: mean
+  - std-dev: standard deviation
+  - -X/-Y/-Z: data of X/Y/Z axis
+
+#### Variables
+##### Time
+ [1] "time.Body.Accelerometer.mean.-X"                           
+ [2] "time.Body.Accelerometer.std-dev.-X"                        
+ [3] "time.Body.Accelerometer.mean.-Y"                           
+ [4] "time.Body.Accelerometer.std-dev.-Y"                        
+ [5] "time.Body.Accelerometer.mean.-Z"                           
+ [6] "time.Body.Accelerometer.std-dev.-Z"                        
+ [7] "time.Gravity.Accelerometer.mean.-X"                        
+ [8] "time.Gravity.Accelerometer.std-dev.-X"                     
+ [9] "time.Gravity.Accelerometer.mean.-Y"                        
+[10] "time.Gravity.Accelerometer.std-dev.-Y"                     
+[11] "time.Gravity.Accelerometer.mean.-Z"                        
+[12] "time.Gravity.Accelerometer.std-dev.-Z"                     
+[13] "time.Body.Accelerometer.Jerk-signals.mean.-X"              
+[14] "time.Body.Accelerometer.Jerk-signals.std-dev.-X"           
+[15] "time.Body.Accelerometer.Jerk-signals.mean.-Y"              
+[16] "time.Body.Accelerometer.Jerk-signals.std-dev.-Y"           
+[17] "time.Body.Accelerometer.Jerk-signals.mean.-Z"              
+[18] "time.Body.Accelerometer.Jerk-signals.std-dev.-Z"           
+[19] "time.Body.Angular-velocity.mean.-X"                        
+[20] "time.Body.Angular-velocity.std-dev.-X"                     
+[21] "time.Body.Angular-velocity.mean.-Y"                        
+[22] "time.Body.Angular-velocity.std-dev.-Y"                     
+[23] "time.Body.Angular-velocity.mean.-Z"                        
+[24] "time.Body.Angular-velocity.std-dev.-Z"                     
+[25] "time.Body.Angular-velocity.Jerk-signals.mean.-X"           
+[26] "time.Body.Angular-velocity.Jerk-signals.std-dev.-X"        
+[27] "time.Body.Angular-velocity.Jerk-signals.mean.-Y"           
+[28] "time.Body.Angular-velocity.Jerk-signals.std-dev.-Y"        
+[29] "time.Body.Angular-velocity.Jerk-signals.mean.-Z"           
+[30] "time.Body.Angular-velocity.Jerk-signals.std-dev.-Z"        
+[31] "time.Body.Accelerometer.Magnitude.mean."                   
+[32] "time.Body.Accelerometer.Magnitude.std-dev."                
+[33] "time.Gravity.Accelerometer.Magnitude.mean."                
+[34] "time.Gravity.Accelerometer.Magnitude.std-dev."             
+[35] "time.Body.Accelerometer.Jerk-signals.Magnitude.mean."      
+[36] "time.Body.Accelerometer.Jerk-signals.Magnitude.std-dev."   
+[37] "time.Body.Angular-velocity.Magnitude.mean."                
+[38] "time.Body.Angular-velocity.Magnitude.std-dev."             
+[39] "time.Body.Angular-velocity.Jerk-signals.Magnitude.mean."   
+[40] "time.Body.Angular-velocity.Jerk-signals.Magnitude.std-dev."
+
+##### Fast Fourier Transform
+ [1] "FFT.Body.Accelerometer.mean.-X"                               
+ [2] "FFT.Body.Accelerometer.std-dev.-X"                            
+ [3] "FFT.Body.Accelerometer.mean.-Y"                               
+ [4] "FFT.Body.Accelerometer.std-dev.-Y"                            
+ [5] "FFT.Body.Accelerometer.mean.-Z"                               
+ [6] "FFT.Body.Accelerometer.std-dev.-Z"                            
+ [7] "FFT.Body.Accelerometer.Jerk-signals.mean.-X"                  
+ [8] "FFT.Body.Accelerometer.Jerk-signals.std-dev.-X"               
+ [9] "FFT.Body.Accelerometer.Jerk-signals.mean.-Y"                  
+[10] "FFT.Body.Accelerometer.Jerk-signals.std-dev.-Y"               
+[11] "FFT.Body.Accelerometer.Jerk-signals.mean.-Z"                  
+[12] "FFT.Body.Accelerometer.Jerk-signals.std-dev.-Z"               
+[13] "FFT.Body.Angular-velocity.mean.-X"                            
+[14] "FFT.Body.Angular-velocity.std-dev.-X"                         
+[15] "FFT.Body.Angular-velocity.mean.-Y"                            
+[16] "FFT.Body.Angular-velocity.std-dev.-Y"                         
+[17] "FFT.Body.Angular-velocity.mean.-Z"                            
+[18] "FFT.Body.Angular-velocity.std-dev.-Z"                         
+[19] "FFT.Body.Accelerometer.Magnitude.mean."                       
+[20] "FFT.Body.Accelerometer.Magnitude.std-dev."                    
+[21] "FFT.Body.BodyAccelerometer.Jerk-signals.Magnitude.mean."      
+[22] "FFT.Body.BodyAccelerometer.Jerk-signals.Magnitude.std-dev."   
+[23] "FFT.Body.BodyAngular-velocity.Magnitude.mean."                
+[24] "FFT.Body.BodyAngular-velocity.Magnitude.std-dev."             
+[25] "FFT.Body.BodyAngular-velocity.Jerk-signals.Magnitude.mean."   
+>>>>>>> c2a9dcb8e7364e7b87c54457d6af434676ca80b2
 [26] "FFT.Body.BodyAngular-velocity.Jerk-signals.Magnitude.std-dev."
